@@ -27,7 +27,6 @@ kotlin {
             implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0")
             implementation("com.squareup.retrofit2:converter-gson:3.0.0")
             implementation("com.google.code.gson:gson:2.11.0")
-
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -35,6 +34,8 @@ kotlin {
         jvmMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutinesSwing)
+            implementation(libs.androidx.material3.desktop)
+            implementation(libs.androidx.foundation.layout.desktop)
         }
     }
 }
