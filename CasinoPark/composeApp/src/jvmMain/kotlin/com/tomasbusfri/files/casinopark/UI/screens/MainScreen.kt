@@ -20,7 +20,7 @@ import com.tomasbusfri.files.casinopark.model.data.dataclasses.Player
 @Composable
 fun MainScreen(
     modifier: Modifier = Modifier,
-    decks: MutableList<Deck>,
+    decks: List<Deck>,
     player: Player
 ) {
     var numberOfPlays by remember { mutableStateOf(0) }

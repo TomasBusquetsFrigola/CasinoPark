@@ -43,7 +43,7 @@ kotlin {
 
 compose.desktop {
     application {
-        mainClass = "com.tomasbusfri.files.casinopark.MainKt"
+        mainClass = "com.tomasbusfri.files.casinopark.main"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
