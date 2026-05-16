@@ -5,7 +5,6 @@ import com.tomasbusfri.files.casinopark.model.data.dataclasses.Card
 import com.tomasbusfri.files.casinopark.model.data.dataclasses.Deck
 import com.tomasbusfri.files.casinopark.model.data.enums.CardColor
 import java.sql.Connection
-import kotlin.collections.copy
 
 class DAOCasinoImpl (
     val connection: Connection,
@@ -45,7 +44,7 @@ class DAOCasinoImpl (
                     Card(
                         cardValue = resultSet.getInt("card_value"),
                         cardSuit = resultSet.getString("card_suit"),
-                        cardSide = resultSet.getString("card_side"),
+                        cardSideSVG = resultSet.getString("card_side"),
                         cardColor =
                             if (resultSet.getString("card_color") == "black") CardColor.BLACK
                             else CardColor.RED

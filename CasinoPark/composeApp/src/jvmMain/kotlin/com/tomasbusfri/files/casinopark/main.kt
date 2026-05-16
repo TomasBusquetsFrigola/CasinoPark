@@ -6,21 +6,16 @@ import com.tomasbusfri.files.casinopark.UI.screens.MainScreen
 import com.tomasbusfri.files.casinopark.model.dao.config.DAOFactory
 import com.tomasbusfri.files.casinopark.model.data.dataclasses.Player
 
-class main {
-    fun main() = application {
-        Window(
-            onCloseRequest = ::exitApplication,
-            title = "casinopark",
-        ) {
-//        App()
-            val dao = DAOFactory()
-            val decker = dao.startDAO()
-            val decks = decker.getAll()
-            val player = Player(5000)
-            MainScreen(
-                decks = decks,
-                player = player,
-            )
-        }
+fun main() = application {
+    Window(
+        onCloseRequest = ::exitApplication,
+        title = "casinopark",) {
+        val dao = DAOFactory()
+        val decker = dao.startDAO()
+        val decks = decker.getAll()
+        val player = Player(5000)
+        MainScreen(
+            decks = decks,
+            player = player,)
     }
 }

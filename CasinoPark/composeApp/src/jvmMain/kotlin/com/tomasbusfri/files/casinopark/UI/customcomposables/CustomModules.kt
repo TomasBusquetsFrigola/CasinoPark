@@ -1,4 +1,4 @@
-package com.tomasbusfri.files.casinopark.UI
+package com.tomasbusfri.files.casinopark.UI.customcomposables
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
@@ -17,6 +17,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.tomasbusfri.files.casinopark.UI.Colors
 
 @Composable
 fun GameButton(

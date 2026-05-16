@@ -12,8 +12,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import com.tomasbusfri.files.casinopark.UI.Colors
-import com.tomasbusfri.files.casinopark.UI.CreditSlider
-import com.tomasbusfri.files.casinopark.UI.GameButton
+import com.tomasbusfri.files.casinopark.UI.customcomposables.CreditSlider
+import com.tomasbusfri.files.casinopark.UI.customcomposables.GameButton
 import com.tomasbusfri.files.casinopark.model.data.dataclasses.Deck
 import com.tomasbusfri.files.casinopark.model.data.dataclasses.Player
 
